@@ -14,12 +14,15 @@ if ((numero%2) == 0 && numero < 10){
     numero = parseInt(prompt("ingrese un numero menor a 10 "));
 }
 */
+
+// Codigo para la entrega de simulador interactivo 
+
 let precioFinal;
 let precio = parseInt (prompt (" Ingrese el valor del producto para ver si tiene descuento"));
 let cantProducto = parseInt (prompt (" Ingrese la cantidad de productos"));
 
 const descuento = () => {
-    if((precio >= 200) || (cantProducto >=3)){
+    if((precio >= 200) || (cantProducto >= 4)){
          desc = (precio * 20) / 100 ; 
     }else if (precio >= 150 && precio < 200){
          desc = (precio * 10) / 100 ;
