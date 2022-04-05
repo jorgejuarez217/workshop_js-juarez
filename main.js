@@ -1,4 +1,4 @@
-let numero = parseInt(prompt("ingrese un numero menor a 10 "));
+/*let numero = parseInt(prompt("ingrese un numero menor a 10 "));
 
 if ((numero%2) == 0 && numero < 10){
     for (let i =numero; i <= 30; i+=2 ){
@@ -13,4 +13,22 @@ if ((numero%2) == 0 && numero < 10){
 }else {
     numero = parseInt(prompt("ingrese un numero menor a 10 "));
 }
+*/
+let precioFinal;
+let precio = parseInt (prompt (" Ingrese el valor del producto para ver si tiene descuento"));
+let cantProducto = parseInt (prompt (" Ingrese la cantidad de productos"));
 
+const descuento = () => {
+    if((precio >= 200) || (cantProducto >=3)){
+         desc = (precio * 20) / 100 ; 
+    }else if (precio >= 150 && precio < 200){
+         desc = (precio * 10) / 100 ;
+        }else {
+            document.write ("Su producto no tiene descuento");
+        }
+            precioFinal = precio - desc;
+    return (precioFinal);
+        
+}
+document.write("el precio final del producto es" + " $" + descuento());
+ 
